@@ -4,7 +4,7 @@
 
 Mesour GeoServices is a service for easy to use Google Directions API and more GEO APIs.
 
-- [Documentation/Demo](http://geo-services.mesour.com)
+- [Documentation](http://geo-services.mesour.com)
 - [API](http://apis.mesour.com/api/GeoServices0.1/)
 - [Author](http://mesour.com)
 - [Contact](http://mesour.com/contact)
