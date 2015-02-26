@@ -2,7 +2,7 @@
 
 [![Latest Stable Version](https://img.shields.io/github/release/mesour/Geo-services.svg)](https://github.com/mesour/Geo-services/releases "Latest Stable Version")
 
-Mesour GeoServices is a service for easy to use Google Directions API and more GEO APIs
+Mesour GeoServices is a service for easy to use Google Directions API and more GEO APIs.
 
 - [Documentation/Demo](http://geo-services.mesour.com)
 - [API](http://apis.mesour.com/api/GeoServices0.1/)
