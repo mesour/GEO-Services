@@ -223,7 +223,7 @@ class Direction extends Http\Searcher implements ISearch {
 		if(count($this->way_points) > 0) {
 			$this->response->setParameter('waypoints', implode('|', $this->way_points));
 		}
-		return new Direction\Result($this->response->getResponseJson());
+		return new Direction\Result($this->response->getResponse());
 	}
 
 }

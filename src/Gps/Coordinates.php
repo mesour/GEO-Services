@@ -21,14 +21,14 @@ class Coordinates {
 	}
 
 	/**
-	 * @return float
+	 * @return double
 	 */
 	public function getLat() {
 		return (double) $this->lat;
 	}
 
 	/**
-	 * @return float
+	 * @return double
 	 */
 	public function getLng() {
 		return (double) $this->lng;

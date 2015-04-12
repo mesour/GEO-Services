@@ -54,12 +54,12 @@ class Response {
 		return $this->getParsedParameters($parameters);
 	}
 
-	public function getResponseJson() {
+	public function getResponse($url_separator = '?') {
 		if(!is_string($this->link)) {
 			throw new Exception('Link must be a string. ' . gettype($this->link) . ' given.');
 		}
 		$args = $this->prepareParameters();
-		$url = $this->link . '?' . $args;
+		$url = $this->link . $url_separator . $args;
 
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);

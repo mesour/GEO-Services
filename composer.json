@@ -1,20 +1,24 @@
 {
-    "name": "mesour/geo-services",
-    "description": "Mesour GeoServices is a service for easy to use Google Directions API and more GEO APIs",
-    "license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
-    "keywords": ["google api", "services", "directions", "geolocation"],
-    "homepage": "http://geo-services.mesour.com",
-    "authors": [
-        {
-            "name": "Matouš Němec",
-            "homepage": "http://mesour.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.0",
-	"ext-curl": "*"
-    },
-    "autoload": {
-        "classmap": ["src/"]
+  "name": "mesour/geo-services",
+  "description": "Mesour GeoServices is a service for easy to use Google Directions API and more GEO APIs",
+  "license": ["BSD-3-Clause","GPL-2.0","GPL-3.0"],
+  "keywords": ["google api","services","directions","geolocation"],
+  "homepage": "http://geo-services.mesour.com",
+  "authors": [
+    {
+      "name": "Matouš Němec",
+      "homepage": "http://mesour.com"
     }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "nette/nette": "~2.3.0",
+    "nette/tester": "~1.2"
+  },
+  "autoload": {
+    "classmap": ["src/"]
+  }
 }
