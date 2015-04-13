@@ -22,7 +22,7 @@ class Response extends \Mesour\GeoServices\Http\Response
 	public function __construct(Authenticator $authenticator)
     {
 		$this->authenticator = $authenticator;
-		$this->link = 'https://maps.googleapis.com/maps/api/timezone/json';
+		$this->link = 'https://maps.googleapis.com/maps/api/geocode/json';
 	}
 
 	protected function prepareParameters()

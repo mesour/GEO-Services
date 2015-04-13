@@ -17,12 +17,12 @@ class Item
     private $Item = array();
 
     /**
-     * @var AddressComponents
+     * @var Item\AddressComponents
      */
     private $address_components;
 
     /**
-     * @var Geometry
+     * @var Item\Geometry
      */
     private $geometry;
 
@@ -51,13 +51,13 @@ class Item
 
 
     /**
-     * @return AddressComponents
+     * @return Item\AddressComponents
      */
     public function getAddressComponents()
     {
         if(!$this->address_components)
         {
-            $this->address_components = new AddressComponents($this->Item['address_components']);
+            $this->address_components = new Item\AddressComponents($this->Item['address_components']);
         }
         return $this->address_components;
     }
@@ -73,13 +73,13 @@ class Item
 
 
     /**
-     * @return Geometry
+     * @return Item\Geometry
      */
     public function getGeometry()
     {
         if(!$this->geometry)
         {
-            $this->geometry = new Geometry($this->Item['geometry']);
+            $this->geometry = new Item\Geometry($this->Item['geometry']);
         }
         return $this->geometry;
     }
