@@ -100,4 +100,16 @@ class PolyLine implements \Iterator, \ArrayAccess, \Countable {
 		return ($key !== NULL && $key !== FALSE);
 	}
 
+    public function toArray() {
+        $output = array();
+        foreach($this->coordinates as $coordinates) {
+            $output[] = $coordinates->toArray();
+        }
+        return $output;
+    }
+
+    public function __toArray() {
+        return $this->toArray();
+    }
+
 }

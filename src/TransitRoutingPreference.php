@@ -4,14 +4,12 @@
  * Copyright (c) 2015 Matous Nemec (http://mesour.com)
  */
 
-namespace Mesour\GeoServices\Direction\Transit;
-
-use Mesour\GeoServices\StaticClassException;
+namespace Mesour\GeoServices;
 
 /**
  * @author Matous Nemec
  */
-class RoutingPreference {
+class TransitRoutingPreference {
 
 	/**
 	 * indicates that the calculated route should prefer limited amounts of walking.

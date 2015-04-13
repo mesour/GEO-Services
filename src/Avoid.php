@@ -4,9 +4,7 @@
  * Copyright (c) 2015 Matous Nemec (http://mesour.com)
  */
 
-namespace Mesour\GeoServices\Direction;
-
-use Mesour\GeoServices\StaticClassException;
+namespace Mesour\GeoServices;
 
 /**
  * @author Matous Nemec

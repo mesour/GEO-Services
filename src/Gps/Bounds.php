@@ -34,4 +34,15 @@ class Bounds {
 		return $this->northeast;
 	}
 
+    public function toArray() {
+        return array(
+            'southwest' => array('lat' => $this->southwest->getLat(), 'lng' => $this->southwest->getLng()),
+            'northeast' => array('lat' => $this->northeast->getLat(), 'lng' => $this->northeast->getLng()),
+        );
+    }
+
+    public function __toArray() {
+        return $this->toArray();
+    }
+
 }

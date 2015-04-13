@@ -175,11 +175,11 @@ class Direction extends Http\Searcher implements ISearch {
 	 * can specify a value of now, which sets the departure time to the current
 	 * time (correct to the nearest second).
 	 *
-	 * @param $arrival_time
+	 * @param $departure_time
 	 * @return $this
 	 */
-	public function setDepartureTime($arrival_time) {
-		$this->response->setParameter('departure_time', $arrival_time);
+	public function setDepartureTime($departure_time) {
+		$this->response->setParameter('departure_time', $departure_time);
 		return $this;
 	}
 
@@ -223,7 +223,7 @@ class Direction extends Http\Searcher implements ISearch {
 		if(count($this->way_points) > 0) {
 			$this->response->setParameter('waypoints', implode('|', $this->way_points));
 		}
-		return new Direction\Result($this->response->getResponse());
+		return new Direction\Result($this->response->getResponseJson());
 	}
 
 }

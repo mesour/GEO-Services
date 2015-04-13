@@ -34,4 +34,12 @@ class Coordinates {
 		return (double) $this->lng;
 	}
 
+    public function toArray() {
+        return array('lat' => $this->getLat(), 'lng' => $this->getLng());
+    }
+
+    public function __toArray() {
+        return $this->toArray();
+    }
+
 }
